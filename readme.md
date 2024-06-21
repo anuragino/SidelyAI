@@ -6,7 +6,7 @@ This backend server handles form submissions for Sidely AI. Built with Node.js, 
 
 ### 🚦 Installation
 
-1. **Clone the repository:** `git clone <repository_url>`
+1. **Clone the repository:** `git clone <https://github.com/anuragino/SidelyAI>`
 
 2. **Install dependencies:**  `npm install`
 
