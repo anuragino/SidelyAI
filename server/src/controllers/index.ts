@@ -5,18 +5,20 @@ export const pingController = (req: Request, res: Response) => {
     res.send(true);
 };
 
+
 export const submitController = async (req: Request, res: Response) => {
     const { name, email, phone, github_link, stopwatch_time } = req.body;
 
     try {
         const newSubmission = new Submission({ name, email, phone, github_link, stopwatch_time });
         await newSubmission.save();
-        res.status(201).send('Submission saved successfully.');
-    }
-    catch (error) {
-        res.status(500).send('Error saving submission.');
+        res.status(201).json({ message: 'Submission saved successfully.' });
+    } catch (error) {
+        console.error('Error saving submission:', error);
+        res.status(500).json({ message: 'Error saving submission.', error: error.message });
     }
 };
+
 
 export const readController = async (req: Request, res: Response) => {
     const index = parseInt(req.query.index as string, 10);
