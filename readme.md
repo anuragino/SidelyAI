@@ -4,7 +4,7 @@ This backend server handles form submissions for Sidely AI. Built with Node.js, 
 
 ## Getting Started
 
-### Installation
+### 🚦 Installation
 
 1. **Clone the repository:** `git clone <repository_url>`
 
@@ -15,7 +15,7 @@ This backend server handles form submissions for Sidely AI. Built with Node.js, 
 4. **Start the server:** `node dist/index.js`
 
 
-### API Endpoint
+### 🌟 API Endpoint
 
 1. **/ping**- A GET request that always returns True
 2. **/submit** - A POST request with parameters "name", "email", "phone", "github_link" and "stopwatch_time"
